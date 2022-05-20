@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(op)
+find_package(OpenSSL REQUIRED)
+set(CMAKE_CXX_STANDARD 14)
+add_executable(op main.cpp Frame.cpp Frame.h ClearFrame.cpp ClearFrame.h)
